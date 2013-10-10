@@ -24,6 +24,18 @@
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Bariol_Regular.otf</string>
+		<string>Bariol_Bold.otf</string>
+		<string>Bariol_Light.otf</string>
+		<string>Bariol_Regular_Italic.otf</string>
+		<string>Bariol_Thin.otf</string>
+		<string>ProximaNova-Regular.otf</string>
+		<string>ProximaNova-Light.otf</string>
+		<string>ProximaNova-Black.otf</string>
+		<string>ProximaNova-Bold.otf</string>
+	</array>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
@@ -31,8 +43,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 </dict>
 </plist>
