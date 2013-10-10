@@ -40,7 +40,7 @@
 {
     [super viewDidLoad];
     
-    float theFloat = 1.5;
+    float theFloat = 1.5; 
     int rounded = lroundf(theFloat); NSLog(@"%d",rounded);
     int roundedUp = ceil(theFloat); NSLog(@"%d",roundedUp);
     int roundedDown = floor(theFloat); NSLog(@"%d",roundedDown);
