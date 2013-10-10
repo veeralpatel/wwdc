@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DesignsViewController : UIViewController
+@interface DesignsViewController : UIViewController <UIScrollViewDelegate>
+
+@property (nonatomic, strong) IBOutlet UIScrollView *scrollView;
+@property (nonatomic, retain) UIPageControl * pageControl;
+@property (nonatomic, retain) UILabel *info;
 
 @end
+

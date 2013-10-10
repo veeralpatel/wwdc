@@ -40,22 +40,26 @@
 {
     [super viewDidLoad];
     
+    float theFloat = 1.5;
+    int rounded = lroundf(theFloat); NSLog(@"%d",rounded);
+    int roundedUp = ceil(theFloat); NSLog(@"%d",roundedUp);
+    int roundedDown = floor(theFloat); NSLog(@"%d",roundedDown);
     
     timelineData = [[NSArray alloc] initWithObjects:
           @"Hi, I'm Veeral Patel.",
           @"A 15 year old iOS developer and designer living in New Jersey.",
-          @"Here's a picture of me", //add activity indicator
-          @"Here's a picture of me, using 300 UILabels", //add activity indicator
+          @"Here's a picture of me.", //add activity indicator
+          @"Here's a picture of me, using 200 UILabels.", //add activity indicator
           @"I attend Bergenfield High School and ranked 5th in my class with a GPA of 5.654.",
           @"I started programming in the summer of 2012. I started entirely on my iPad using a neat app called Codea.",
           @"I released a simple physics game, Gravity Drop, on the day school started. It has gotten 28 downloads.", 
-          @"Disappointed with the sales, I worked on a puzzle game, Flood+, and released it before Christmas break. To this day, it had 701 downloads.", //add activity indicator
-          @"A new year meant a new app, so I tackled my biggest project, Owl. Owl is a simple daily fact app that was shipped to Apple a couple days ago. Unlike my other other apps, this was entirely programmed in Xcode and it will be available for free.", //add activity indicator
-          @"I tend to design projects, but never go on and code them. These apps are currently under development. \nCalendar \nWeather \nCountdown", //add activity indicator
-          @"http://veeralpatel.com/owl",
-          @"I have no professional experience. I'm in 10th grade, but that shouldn't be an excuse. I have a dream that someday, all my hardwork and projects will lead to an awesome job! ",
-          @"Some of my technical skills involve knowledge in these fine languages and applications: \nObjective C (obviously)\nLua \nROBOTC (C programming language for robotics) \nHTML5 \nCSS3 \nPhotoshop CS6 \nIllustrator CS6 \nInDesign CS6",
-          @"When I'm not building iOS apps, you can catch me building robots with my friends, playing on school's JV tennis team, and learning new things at Codecademy!",
+          @"Disappointed with the sales, I worked on a puzzle game, Flood+, and released it before Christmas break. To this day, it has 701 downloads.", //add activity indicator
+          @"A new year meant a new app, so I tackled my biggest project, Owl. Owl is a simple daily fact app that was shipped to Apple a couple days ago. Unlike my other apps, this was programmed entirely in Xcode, not Codea, and will be available for free.", //add activity indicator
+          @"I also tend to design projects, but never saddle up and release them. These apps are currently under development.", //add activity indicator
+          @"I have no professional experience. I'm in the 10th grade, but that shouldn't be an excuse. I have a dream that all my hardwork and projects will eventually lead to an awesome job! ",
+          @"The first time I saw, read, and understood code was when I started developing for iOS. I had finally found my passion. Programming.\n \nMy technical skills now involve: \n \nObjective C (obviously)\nLua \nROBOTC (C programming language for robotics) \nHTML5 \nCSS3 \nPhotoshop CS6 \nIllustrator CS6 \nInDesign CS6",
+          @"When I'm not building iOS apps, you can catch me building robots with my friends, playing on my school's JV tennis team, and learning new things at Codecademy!",
+          @"Thank you for your time!",
           nil];
     
 
@@ -127,20 +131,16 @@
     if (indexPath.row == 2)
     {
         cell.accessoryView = moreInfo;
-    }
-    if (indexPath.row == 3)
+    } else if (indexPath.row == 3)
     {
         cell.accessoryView = moreInfo;
-    }
-    if (indexPath.row == 7)
+    } else if (indexPath.row == 7)
     {
         cell.accessoryView = moreInfo;
-    }
-    if (indexPath.row == 8)
+    } else if (indexPath.row == 8)
     {
         cell.accessoryView = moreInfo;
-    }
-    if (indexPath.row == 9)
+    } else if (indexPath.row == 9)
     {
         cell.accessoryView = moreInfo;
     }

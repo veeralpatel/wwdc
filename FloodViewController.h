@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FloodViewController : UIViewController
+@interface FloodViewController : UIViewController <UIScrollViewDelegate>
+
+@property (nonatomic, strong) IBOutlet UIScrollView *scrollView;
+@property (nonatomic, retain) UIPageControl * pageControl;
+@property (nonatomic, retain) UILabel *info;
 
 @end
